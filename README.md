@@ -11,4 +11,4 @@ Abaixo, a comparação mostrando o comportamento da string comum versus a string
 ![Demonstração do XOR](assets/animation.gif)
 
 ## Nota
-Este repositório poderá receber atualizações e melhorias futuras.*
+Este repositório poderá receber atualizações e melhorias futuras.
