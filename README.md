@@ -10,8 +10,6 @@ Abaixo, a comparação mostrando o comportamento da string comum versus a string
 
 ![Demonstração do XOR](assets/animation.gif)
 
-## Por que a string volta ao normal quando o programa roda?
 O programa precisa da informação original para funcionar corretamente. O processo ocorre em duas etapas:
-
 1. **Na Compilação (No Arquivo/Disco):** A string original é transformada em bytes cifrados. Se você abrir o executável em qualquer **editor binário ou ferramenta de análise**, o texto confidencial não estará visível — apenas bytes embaralhados.
 2. **Na Execução (Na Memória RAM):** Assim que o programa é iniciado, a macro executa a rotina de descriptografia, recuperando a string original temporariamente na memória RAM para que o seu código possa utilizá-la.
