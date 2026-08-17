@@ -10,6 +10,8 @@ Abaixo, a comparação mostrando o comportamento da string comum versus a string
 
 ![Demonstração do XOR](assets/animation.gif)
 
-O programa precisa da informação original para funcionar corretamente. O processo ocorre em duas etapas:
-1. **Na Compilação (No Arquivo/Disco):** A string original é transformada em bytes cifrados. Se você abrir o executável em qualquer **editor binário ou ferramenta de análise**, o texto confidencial não estará visível — apenas bytes embaralhados.
-2. **Na Execução (Na Memória RAM):** Assim que o programa é iniciado, a macro executa a rotina de descriptografia, recuperando a string original temporariamente na memória RAM para que o seu código possa utilizá-la.
+## Como a descriptografia funciona em tempo de execução?
+Para que o software cumpra sua função, a string protegida precisa ser decifrada durante a execução:
+
+1. **Proteção Estática (Disco):** O binário compilado armazena apenas os bytes embaralhados e a chave gerada por hash. Nenhuma ferramenta de análise consegue ler a string em texto plano.
+2. **Decifração Dinâmica (Memória):** No momento em que o código é executado, a rotina reconstrói a string original temporariamente na memória RAM.
